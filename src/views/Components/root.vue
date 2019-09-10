@@ -4,15 +4,15 @@
       <h5 class="component-title">组件列表</h5>
       <ul class="component-menu">
         <li><router-link to="/components/button">按钮</router-link></li>
-        <li><router-link to="/components/button">标签</router-link></li>
-        <li><router-link to="/components/button">表单</router-link></li>
-        <li><router-link to="/components/button">文字</router-link></li>
-        <li><router-link to="/components/button">颜色</router-link></li>
-        <li><router-link to="/components/button">TAB</router-link></li>
-        <li><router-link to="/components/button">滑块</router-link></li>
-        <li><router-link to="/components/button">进度条</router-link></li>
-        <li><router-link to="/components/button">提示</router-link></li>
-        <li><router-link to="/components/button">卡片</router-link></li>
+        <li><router-link to="/components/tag">标签</router-link></li>
+        <li><router-link to="/components/form">表单</router-link></li>
+        <li><router-link to="/components/text">文字</router-link></li>
+        <li><router-link to="/components/color">颜色</router-link></li>
+        <li><router-link to="/components/tab">TAB</router-link></li>
+        <li><router-link to="/components/slider">滑块</router-link></li>
+        <li><router-link to="/components/process">进度条</router-link></li>
+        <li><router-link to="/components/alert">提示</router-link></li>
+        <li><router-link to="/components/card">卡片</router-link></li>
       </ul>
     </div>
     <div class="page-component__right">
@@ -36,6 +36,7 @@ export default class ComponentRoot extends Vue {}
      }
      &__right {
          flex: 1 1 auto;
+         overflow-y: auto;
      }
      .component-title {
           padding: .25rem 1.5rem;
@@ -52,6 +53,10 @@ export default class ComponentRoot extends Vue {}
             &:hover {
               color: #000;
               text-decoration: none;
+            }
+            &.router-link-active {
+              font-weight: 600;
+              color: #000;
             }
          }
        }

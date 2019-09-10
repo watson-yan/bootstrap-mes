@@ -7,13 +7,28 @@ const componentRouters = [
     children: [
       {
         path: '',
-        // name: 'ComponentsIndex',
+        name: 'ComponentsIndex',
         component: () => import(/* webpackChunkName: "components" */ '../views/Components/index.vue')
       },
       {
         path: 'button',
-        // name: 'ComponentsButton',
+        name: 'ComponentsButton',
         component: () => import(/* webpackChunkName: "components" */ '../views/Components/button.vue')
+      },
+      {
+        path: 'tag',
+        name: 'ComponentsTag',
+        component: () => import(/* webpackChunkName: "components" */ '../views/Components/tag.vue')
+      },
+      {
+        path: 'form',
+        name: 'ComponentsForm',
+        component: () => import(/* webpackChunkName: "components" */ '../views/Components/form.vue')
+      },
+      {
+        path: 'text',
+        name: 'ComponentsForm',
+        component: () => import(/* webpackChunkName: "components" */ '../views/Components/text.vue')
       }
     ]
   }
