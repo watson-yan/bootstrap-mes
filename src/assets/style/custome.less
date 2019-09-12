@@ -1,7 +1,7 @@
+// 按钮
 .btn-primary {
   border-color: #4584cc;
   background-image: linear-gradient(to bottom, #629fe4 0, #4572a5 50%, #3f6a9a 100%);
-
   &:hover {
     background-image: linear-gradient(to bottom, #629fe4 + 10% 0, #4572a5 + 10% 50%, #3f6a9a + 10% 100%);
   }
@@ -37,7 +37,6 @@
 
 .btn-danger {
   background-image: linear-gradient(to bottom, #f34454 0%, #ce0014 50%, #ff384b 100%);
-
   &:hover {
     background-image: linear-gradient(to bottom, #f34454 + 10% 0%, #ce0014 50% + 10%, #ff384b + 10% 100%);
   }
@@ -57,4 +56,51 @@
     border-color: #09b9d4;
     background-image: linear-gradient(to bottom, #1bd3f1 + 10% 0%, #0f7586 + 10% 50%, #128698 + 10% 100%);
   }
+}
+
+// badge 标记
+.badge {
+  &.badge-primary {
+    background-image: linear-gradient(45deg, #629fe4 0, #4572a5 50%, #3f6a9a 100%);
+  }
+  &.badge-secondary {
+    background-image: linear-gradient(45deg, #6c757d 0%, #34383c 50%, #6c757d 100%);
+  }
+  &.badge-success {
+    background-image: linear-gradient(45deg, #00f338 0%, #00a726 50%, #2bca50 100%);
+  }
+  &.badge-danger {
+    background-image: linear-gradient(45deg, #f34454 0%, #ce0014 50%, #ff384b 100%);
+  }
+  &.badge-warning {
+    background-image: linear-gradient(45deg, #ffd556 0%, #ca9b0e 50%, #f9bb00 100%);
+  }
+  &.badge-info {
+    background-image: linear-gradient(to bottom, #1bd3f1 0%, #0f7586 50%, #128698 100%);
+  }
+  &.badge-light {
+    background-image: linear-gradient(to bottom, #f2f2f2 0%, #f7f7f7 50%, #c5c5c5 100%);
+  }
+  &.badge-lg {
+    padding: .4rem .8rem;
+  }
+} 
+
+
+// tab切换
+.nav.nav-tabs {
+  padding: .25rem .75rem 0 .75rem;
+  background-image: linear-gradient(to bottom, #f2f2f2 0%, #f7f7f7 50%, #c5c5c5 100%);
+  .nav-item {
+    a {
+      border-radius: 0;
+    }
+  }
+}
+.nav-pills {
+  .show > .nav-link,
+  .nav-link.active {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #629fe4 0, #4572a5 50%, #3f6a9a 100%);
+  } 
 }

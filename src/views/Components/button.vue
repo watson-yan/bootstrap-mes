@@ -11,7 +11,6 @@
       <button type="button" class="btn btn-warning">Warning</button>
       <button type="button" class="btn btn-info">Info</button>
       <button type="button" class="btn btn-light">Light</button>
-      <button type="button" class="btn btn-dark">Dark</button>
       <button type="button" class="btn btn-link">Link</button>
     </div>
     <pre class="hl-pre">
@@ -35,6 +34,26 @@
       <code class="html" v-html="$htmlCode(buttonTemp2)">
       </code>
     </pre>
+
+    <br>
+    <br>
+    <h5 class="mb-3">按钮组</h5>
+    <div class="mb-3">
+      <div class="btn-group">
+        <button type="button" class="btn btn-light">Left</button>
+        <button type="button" class="btn btn-light">Middle</button>
+        <button type="button" class="btn btn-light">Right</button>
+      </div>
+    </div>
+    <pre class="hl-pre">
+      <code class="html" v-html="$htmlCode(buttonTemp3)">
+      </code>
+    </pre>
+    <br>
+    <br>
+
+    <br>
+    <br>
   </div>
 </template>
 <script lang="ts">
@@ -62,6 +81,13 @@ export default class ComponentButton extends Vue {
     <button type="button" class="btn btn-primary btn-lg">Primary</button>
     <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
     <button type="button" class="btn btn-light btn-lg">Light</button>
+  `
+  @Provide() buttonTemp3:string = `
+    <div class="btn-group">
+      <button type="button" class="btn btn-light">Left</button>
+      <button type="button" class="btn btn-light">Middle</button>
+      <button type="button" class="btn btn-light">Right</button>
+    </div>
   `
 
   mounted () {

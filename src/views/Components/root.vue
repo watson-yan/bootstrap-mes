@@ -4,13 +4,15 @@
       <h5 class="component-title">组件列表</h5>
       <ul class="component-menu">
         <li><router-link to="/components/button">按钮</router-link></li>
-        <li><router-link to="/components/tag">标签</router-link></li>
+        <li><router-link to="/components/badge">标记</router-link></li>
         <li><router-link to="/components/form">表单</router-link></li>
-        <li><router-link to="/components/text">文字</router-link></li>
-        <li><router-link to="/components/color">颜色</router-link></li>
+        <li><router-link to="/components/input">输入框</router-link></li>
+        <li><router-link to="/components/checkbox">复选框</router-link></li>
+        <li><router-link to="/components/radio">单选框</router-link></li>
+        <li><router-link to="/components/switch">开关</router-link></li>
+        <li><router-link to="/components/dropdown">下拉列表</router-link></li>
         <li><router-link to="/components/tab">TAB</router-link></li>
-        <li><router-link to="/components/slider">滑块</router-link></li>
-        <li><router-link to="/components/process">进度条</router-link></li>
+        <li><router-link to="/components/progress">进度条</router-link></li>
         <li><router-link to="/components/alert">提示</router-link></li>
         <li><router-link to="/components/card">卡片</router-link></li>
       </ul>
