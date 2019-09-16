@@ -8,11 +8,11 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/" tag="a">首页 <span class="sr-only">(current)</span></router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">介绍</a>
+            <router-link to="/guide" class="nav-link">规范</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/components" class="nav-link">组件</router-link>

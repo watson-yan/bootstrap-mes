@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <h3 class="title">复选框 #checkbox</h3>
+    <h3 class="title">复选框 #Checkbox</h3>
     <br>
     <h5 class="mb-3">一般用法</h5>
     <div class="mb-3">
