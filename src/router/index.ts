@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import ComponentRouter from './components'
 import GuideRouter from './guide'
+import PluginRouter from './plugin'
 import Home from '../views/Home.vue'
 
 Vue.use(Router)
@@ -24,6 +25,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     },
     ...ComponentRouter,
-    ...GuideRouter
+    ...GuideRouter,
+    ...PluginRouter
   ]
 })

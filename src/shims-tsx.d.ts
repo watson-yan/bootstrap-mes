@@ -11,3 +11,7 @@ declare global {
     }
   }
 }
+
+declare global {
+	var $: any
+}

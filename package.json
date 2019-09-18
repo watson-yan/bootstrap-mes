@@ -38,7 +38,8 @@
       "node": true
     },
     "globals": {
-      "hljs": true
+      "hljs": true,
+      "$": true
     },
     "extends": [
       "plugin:vue/essential",

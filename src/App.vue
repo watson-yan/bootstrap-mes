@@ -22,17 +22,13 @@
               插件
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-              <a class="dropdown-item" href="#">Action</a>
+              <router-link class="dropdown-item" to="/plugin/message">弹出框</router-link>
               <a class="dropdown-item" href="#">Another action</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </header>
     <article>
@@ -44,6 +40,9 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 export default class App extends Vue {
+  mounted () {
+    console.log($)
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -53,6 +52,9 @@ export default class App extends Vue {
   flex-direction: column;
   & > header {
     flex: 0 0 auto;
+    .nav-item {
+      margin: 0 10px;
+    }
   }
   & > article {
     flex: 1 1 auto;
