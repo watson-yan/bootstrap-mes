@@ -7,8 +7,8 @@ const componentRouters = [
     children: [
       {
         path: '',
-        name: 'ComponentsIndex',
-        component: () => import(/* webpackChunkName: "components" */ '../views/Components/index.vue')
+        name: 'ComponentsButton',
+        component: () => import(/* webpackChunkName: "components" */ '../views/Components/button.vue')
       },
       {
         path: 'button',
@@ -34,6 +34,11 @@ const componentRouters = [
         path: 'checkbox',
         name: 'ComponentsCheckbox',
         component: () => import(/* webpackChunkName: "components" */ '../views/Components/checkbox.vue')
+      },
+      {
+        path: 'table',
+        name: 'ComponentsTable',
+        component: () => import(/* webpackChunkName: "components" */ '../views/Components/table.vue')
       },
       {
         path: 'radio',

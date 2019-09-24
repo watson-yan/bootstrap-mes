@@ -23,6 +23,14 @@
           </div>
         </div>
       </div>
+      <div class="mb-3">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="请输入搜索内容" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary">搜索</button>
+          </div>
+        </div>
+      </div>
     </div>
     <pre class="hl-pre">
       <code class="html" v-html="$htmlCode(inputTemp1)">

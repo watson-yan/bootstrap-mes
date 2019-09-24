@@ -2,63 +2,84 @@
   <div>
     <div class="p-5">
       <button @click="alert" class="btn btn-light mr-2">Alert框</button>
+      <button @click="confirm" class="btn btn-light mr-2">Confirm框</button>
       <button @click="toast" class="btn btn-light mr-2">Toast框</button>
       <button @click="loading" class="btn btn-light mr-2">Loading加载</button>
     </div>
 
-    <div>
-      <div class="modal" tabindex="-1" role="dialog" style="display: block;">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <svg style="width: 1em; height: 1em; vertical-align: middle; fill: currentcolor; overflow: hidden; font-size: 32px;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2427" width="32" height="32">
-            <path d="M512 958C265.681 958 66 758.319 66 512S265.681 66 512 66s446 199.681 446 446-199.681 446-446 446z m-21.976-285.027l292.547-292.547L740.145 338 447.598 630.547 284.426 467.375 242 509.802 447.768 715.57l42.426-42.427-0.17-0.17z" p-id="2428" fill="#0e932e" data-spm-anchor-id="a313x.7781069.0.i2"></path>
-          </svg>
-          <strong class="mr-auto">Bootstrap</strong>
-          <small class="text-muted">11 mins ago</small>
-          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="toast-body">
-          Hello, world! This is a toast message.
-        </div>
-      </div>
-    </div>
+    <pre class="hl-pre">
+      <code class="html" v-html="$htmlCode(messageTemp1)">
+      </code>
+    </pre>
   </div>
 </template>
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
+import { Vue, Component, Provide } from 'vue-property-decorator'
 
 @Component
 export default class PluginMessage extends Vue {
+  @Provide() messageTemp1: string = `
+    // alert框
+    $.alert('这是提示信息');  // 普通alert
+    $.alert({
+      message: '这是提示信息',
+      submitButtonText: '确定',  // 修改按钮文本
+      onSubmit: function() { // Do Something}   // 点击确定后可以回调
+    })
+
+    // confirm框
+    $.confirm({
+      message: '确定要这么做吗'?
+      onSubmit: function() { // Do Something}   // 点击确定后可以回调
+      onCancel: function() { // Do Something}   // 点击取消后可以回调
+    })
+
+    // toast框
+    $.toast('一般的信息');
+    $.toast({ type: 'danger', message: '温度过高' })   // 目前只提供3种模式的toast: primary(默认)/success(成功)/danger(危险)
+    $.toast({ type: 'success, message: '提交成功', duration: 2000 })    // duration为弹框消失事件（默认2000毫秒），单位毫秒
+    
+    // loading
+    $.loading.show()  // 显示loading框
+    $.loading.hide()  // 关闭loading框
+  `
+
   alert () {
-    $.alert('123')
+    $.alert('请选择需要的工艺')
+  }
+  confirm () {
+    $.confirm({
+      message: '确定下发该指令',
+      onSubmit: function () {
+        $.toast({
+          message: '指令已经下发',
+          type: 'success'
+        })
+      }
+    })
+  }
+  toast () {
+    $.toast('10秒后将复位1号设备')
+    setTimeout(function () {
+      $.toast({
+        message: '二号设备已经复位',
+        type: 'success'
+      })
+      setTimeout(function () {
+        $.toast({
+          message: '温度过高，请停止加温',
+          type: 'danger'
+        })
+      }, 1000)
+    }, 1000)
   }
 
-  toast () {}
-
-  loading () {}
+  loading () {
+    $.loading.show()
+    setTimeout(() => {
+      $.loading.hide()
+    }, 3000)
+  }
 }
 </script>
 <style lang="less" scoped>

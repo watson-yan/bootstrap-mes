@@ -23,9 +23,9 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
               <router-link class="dropdown-item" to="/plugin/message">弹出框</router-link>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <router-link class="dropdown-item" to="/plugin/icon">Icon</router-link>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> -->
             </div>
           </li>
         </ul>
