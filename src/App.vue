@@ -22,11 +22,16 @@
               插件
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <router-link class="dropdown-item" to="/plugin/bootstrapTable">BootstrapTable</router-link>
+              <router-link class="dropdown-item" to="/plugin/select2">select2</router-link>
               <router-link class="dropdown-item" to="/plugin/message">弹出框</router-link>
               <router-link class="dropdown-item" to="/plugin/icon">Icon</router-link>
               <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a> -->
             </div>
+          </li>
+          <li class="nav-item">
+            <router-link to="/demo/index" class="nav-link">示例</router-link>
           </li>
         </ul>
       </div>

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import ComponentRouter from './components'
 import GuideRouter from './guide'
 import PluginRouter from './plugin'
+import DemoRouter from './demo'
 import Home from '../views/Home.vue'
 
 Vue.use(Router)
@@ -26,6 +27,7 @@ export default new Router({
     },
     ...ComponentRouter,
     ...GuideRouter,
-    ...PluginRouter
+    ...PluginRouter,
+    ...DemoRouter
   ]
 })

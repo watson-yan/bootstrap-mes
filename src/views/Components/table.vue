@@ -119,30 +119,30 @@
       <table class="table">
         <thead class="thead-light">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">工厂名称</th>
+            <th scope="col">生产数量</th>
+            <th scope="col">库存数量</th>
+            <th scope="col">在途数量</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row">北京工厂</th>
+            <td>2330m³</td>
+            <td>1000m³</td>
+            <td>60m³</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <th scope="row">上海工厂</th>
+            <td>1330m³</td>
+            <td>30m³</td>
+            <td>294m³</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <th scope="row">深圳工厂</th>
+            <td>2530m³</td>
+            <td>3765m³</td>
+            <td>1309m³</td>
           </tr>
         </tbody>
       </table>
