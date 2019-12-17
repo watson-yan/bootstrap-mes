@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header v-if="headerVisible" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand mb-0 h1" href="/">MES-UI</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,6 +24,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
               <router-link class="dropdown-item" to="/plugin/bootstrapTable">BootstrapTable</router-link>
               <router-link class="dropdown-item" to="/plugin/select2">select2</router-link>
+              <router-link class="dropdown-item" to="/plugin/ztree">zTree</router-link>
               <router-link class="dropdown-item" to="/plugin/message">弹出框</router-link>
               <router-link class="dropdown-item" to="/plugin/icon">Icon</router-link>
               <!-- <div class="dropdown-divider"></div>
@@ -44,9 +45,14 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
+@Component
 export default class App extends Vue {
   mounted () {
     console.log($)
+  }
+
+  get headerVisible () {
+    return !this.$route.path.startsWith('/demo')
   }
 }
 </script>

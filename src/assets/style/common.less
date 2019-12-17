@@ -9,6 +9,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 16px;
 	color: #2c3e50;
+	background-color: #f3f3f4;
 }
 
 .title {
@@ -20,17 +21,94 @@ body {
 	cursor: pointer;
 }
 
+/* 文字大小 */
+.text-mini {
+	font-size: 0.75rem;
+}
+
+.text-small {
+	font-size: 0.875rem;
+}
+
+.text-normal {
+	font-size: 1rem;
+}
+
+.text-large {
+	font-size: 1.125rem;
+}
+
+.text-larger {
+	font-size: 1.4rem;
+}
+
+.text-largest {
+	font-size: 1.8rem;
+}
+
 .beauti-scroll {
-	&::-webkit-scrollbar-track-piece { //滚动条凹槽的颜色，还可以设置边框属性
+	&::-webkit-scrollbar-track-piece {
+		//滚动条凹槽的颜色，还可以设置边框属性
 		background-color: #f8f8f8;
-	}	
-	::-webkit-scrollbar {//滚动条的宽度	
+	}
+
+	::-webkit-scrollbar {
+		//滚动条的宽度	
 		width: 2px;
 		height: 9px;
-	}	
-	::-webkit-scrollbar-thumb {//滚动条的设置	
-		background-color:#dddddd;
-		background-clip:padding-box;
-		min-height:28px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		//滚动条的设置	
+		background-color: #dddddd;
+		background-clip: padding-box;
+		min-height: 28px;
 	}
 }
+
+// 菜单icon
+.i-pljz{background: url("/static/imgs/icon-1.png") center center no-repeat;}
+.i-jybd{background: url("/static/imgs/icon-2.png") center center no-repeat;}
+.i-qgfz{background: url("/static/imgs/icon-3.png") center center no-repeat;}
+.i-zyyh{background: url("/static/imgs/icon-4.png") center center no-repeat;}
+.i-crflz{background: url("/static/imgs/icon-5.png") center center no-repeat;}
+.i-gjxh{background: url("/static/imgs/icon-6.png") center center no-repeat;}
+.i-xtgl{background: url("/static/imgs/icon-7.png") center center no-repeat;}
+
+.i-menu {
+	display: inline-block;
+	margin: 0 auto;
+	width: 30px;
+	height: 30px;
+	background-size: contain;
+	vertical-align: middle;
+ }
+
+ .singal-lamp {
+	display: inline-block;
+	margin: 0 .5rem;
+	width: 18px;
+	height: 18px;
+	background-color: #999;
+	border-radius: 50%;
+	vertical-align: middle;
+	box-shadow: 0 2px 3px 0 rgba(100, 100, 100, 0.15);
+  }
+  .singal-lamp.active {
+	background-image: linear-gradient(to right, #2ad20c 0, #8ee42f 50%, #38b902 100%);
+  }
+  .singal-lamp.danger {
+	background-image: linear-gradient(to right, #e01209 0, #f18580 50%, #ab1826 100%);
+  }
+  .singal-lamp.limit {
+	background-image: linear-gradient(to right, #fb9c22 0, #fb9c22 50%, #fb9c22 100%);
+  }
+  .singal-lamp.title:before {
+	position: absolute;
+	top: 20px;
+	content: attr(title);
+	display: inline-block;
+	font-size: 12px;
+	white-space: nowrap;
+	transform: translateX(-20%);
+  }

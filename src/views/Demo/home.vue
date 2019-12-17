@@ -7,7 +7,8 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
-export default class DataTable extends Vue {
+@Component
+export default class Demo extends Vue {
   mounted () {
     console.log($)
   }
