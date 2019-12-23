@@ -66,6 +66,21 @@ body {
 	}
 }
 
+
+.flex-item {
+	display: flex;
+	.flex-label {
+		flex: 0 0 auto;
+	}
+	.flex-content {
+		flex: 1 0 auto;
+	}
+	.center {
+		align-self: center;
+	}
+}
+
+
 // 菜单icon
 .i-pljz{background: url("/static/imgs/icon-1.png") center center no-repeat;}
 .i-jybd{background: url("/static/imgs/icon-2.png") center center no-repeat;}
@@ -111,4 +126,27 @@ body {
 	font-size: 12px;
 	white-space: nowrap;
 	transform: translateX(-20%);
-  }
+	}
+	
+.error-trigger {
+	position: relative;
+	.error-wrapper {
+		display: none;
+		position: absolute;
+		background: #fff;
+		width: 300px;
+		right: 0;
+		top: 40px;
+		text-align: left;
+		border-radius: 4px;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+		z-index: 99;
+		.error-wrapper__header {
+			font-size: 1.5rem;
+		}
+		.error-wrapper__content {
+			padding: .6rem;
+			font-size: 1rem;
+		}
+	}
+}

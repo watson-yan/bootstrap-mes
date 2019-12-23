@@ -1,0 +1,31 @@
+.nmpd-wrapper {display: none;}
+.nmpd-target {cursor: pointer;}
+.nmpd-grid {
+	position:absolute; 
+	left:50px; 
+	top:50px; 
+	z-index:5000; 
+	-khtml-user-select: none; 
+	padding:10px; 
+	width: initial;
+	background: rgba(0, 0, 0, .7);
+}
+.nmpd-grid td {
+	padding: 8px;
+	width: auto !important;
+}
+.nmpd-overlay {z-index:4999;}
+.nmpd-grid button {
+	width: 60px;
+	height: 40px;
+	font-size: 16px;
+}
+.numero {
+	background: #fff;
+}
+.nmpd-grid button.done {
+	color: #fff;
+	border-color: #88bdf9;
+    background-image: linear-gradient(to bottom, #629fe4 0, #4572a5 50%, #3f6a9a 100%);
+}
+input.nmpd-display {text-align: right; font-size: 16px;}

@@ -8,6 +8,11 @@ export default [
         path: '',
         name: 'cutting',
         component: () => import(/* webpackChunkName: "components" */ '../views/Demo/cutting.vue')
+      },
+      {
+        path: 'ht',
+        name: 'ht',
+        component: () => import(/* webpackChunkName: "components" */ '../views/Demo/ht.vue')
       }
     ]
   },

@@ -6,7 +6,12 @@
         <div class="btn btn-light error-trigger">
           异常信息
           <span class="badge badge-danger">0</span>
-          <div class="error-info-box">
+          <div class="error-wrapper">
+            <p class="error-wrapper__title text-danger bg-light p-2"><i class="las la-exclamation-triangle"></i> 异常信息</p>
+            <div class="error-wrapper__content">
+              <p>切割机组设备参数设定错误切割机组设备参数设定错误切割机组设备参数设定错误</p>
+              <p>切割机组设备参数设定错误切割机组设备参数设定错误切割机组设备参数设定错误</p>
+            </div>
           </div>
         </div>
       </div>
@@ -110,7 +115,7 @@
                 <div class="flex-item mb-4">
                   <label class="flex-label mb-0 center px-3">细侧刮刀</label>
                   <div class="flex-content px-3">
-                    <span class="singal-lamp mr-5"></span>
+                    <span class="singal-lamp active mr-5"></span>
                     <button class="btn btn-light mr-2">打开</button>
                     <button class="btn btn-light">关闭</button>
                   </div>
@@ -126,7 +131,7 @@
                 <div class="flex-item mb-4">
                   <label class="flex-label mb-0 center px-3">1-2槽刀</label>
                   <div class="flex-content px-3">
-                    <span class="singal-lamp mr-5"></span>
+                    <span class="singal-lamp active mr-5"></span>
                     <button class="btn btn-light mr-2">打开</button>
                     <button class="btn btn-light">关闭</button>
                   </div>
@@ -134,7 +139,7 @@
                 <div class="flex-item mb-4">
                   <label class="flex-label mb-0 center px-3">2-1槽刀</label>
                   <div class="flex-content px-3">
-                    <span class="singal-lamp mr-5"></span>
+                    <span class="singal-lamp active mr-5"></span>
                     <button class="btn btn-light mr-2">打开</button>
                     <button class="btn btn-light">关闭</button>
                   </div>
@@ -158,7 +163,7 @@
                 <div class="flex-item mb-4">
                   <label class="flex-label mb-0 center px-3">3-2槽刀</label>
                   <div class="flex-content px-3">
-                    <span class="singal-lamp mr-5"></span>
+                    <span class="singal-lamp active mr-5"></span>
                     <button class="btn btn-light mr-2">打开</button>
                     <button class="btn btn-light">关闭</button>
                   </div>
@@ -166,7 +171,7 @@
                 <div class="flex-item mb-4">
                   <label class="flex-label mb-0 center px-3">4-1槽刀</label>
                   <div class="flex-content px-3">
-                    <span class="singal-lamp mr-5"></span>
+                    <span class="singal-lamp active mr-5"></span>
                     <button class="btn btn-light mr-2">打开</button>
                     <button class="btn btn-light">关闭</button>
                   </div>
@@ -193,7 +198,7 @@
                 <div class="flex-item mb-4">
                   <label class="flex-label mb-0 center px-3">2#刮皮刀</label>
                   <div class="flex-content px-3">
-                    <span class="singal-lamp mr-5"></span>
+                    <span class="singal-lamp active mr-5"></span>
                     <button class="btn btn-light mr-2">打开</button>
                     <button class="btn btn-light">关闭</button>
                   </div>
@@ -201,7 +206,7 @@
                 <div class="flex-item mb-4">
                   <label class="flex-label mb-0 center px-3">吹气阀</label>
                   <div class="flex-content px-3">
-                    <span class="singal-lamp mr-5"></span>
+                    <span class="singal-lamp active mr-5"></span>
                     <button class="btn btn-light mr-2">打开</button>
                     <button class="btn btn-light">关闭</button>
                   </div>
@@ -225,7 +230,7 @@
                 <div class="flex-item mb-4">
                   <label class="flex-label mb-0 center px-3">负压风机</label>
                   <div class="flex-content px-3">
-                    <span class="singal-lamp mr-5"></span>
+                    <span class="singal-lamp active mr-5"></span>
                     <button class="btn btn-light mr-2">打开</button>
                     <button class="btn btn-light">关闭</button>
                   </div>
@@ -438,7 +443,162 @@
                 </div>
 
               </div>
-              <div class="col-sm-6"></div>
+              <div class="col-sm-6">
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">自动模式选择：</label>
+                  <div class="flex-content px-2">
+                    <select class="form-control">
+                      <option value="1">单次自动</option>
+                      <option value="1">循环自动</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">1#小车脱模工作位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">1#小车脱模安全位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">1#小车纵切工作位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">1#小车零点位置预设值：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">第1组槽刀工作位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">第2组槽刀工作位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">第3组槽刀工作位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">第4组槽刀工作位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">2#小车脱模工作位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">2#小车脱模安全位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">2#小车纵切工作位置：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-item mb-3">
+                  <label class="flex-label px-2 center">2#小车零点位置预设值：</label>
+                  <div class="flex-content px-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入位置">
+                      <div class="input-group-append">
+                        <span class="input-group-text">S</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
           <div class="modal-footer">
@@ -511,6 +671,15 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class Demo extends Vue {
   mounted () {
     console.log($)
+    $('.error-trigger').on('click', () => {
+      const e = window.event || arguments.callee.arguments[0]
+      e.stopPropagation()
+      $('.error-trigger .error-wrapper').css('display', 'block')
+    })
+
+    $('body').on('click', () => {
+      $('.error-trigger .error-wrapper').css('display', 'none')
+    })
   }
 
   openOverhaulDialog () {
@@ -529,6 +698,7 @@ export default class Demo extends Vue {
 <style lang="less" scoped>
 .cutting-wrapper {
   padding-bottom: 50px;
+  overflow: auto;
   .cutting-box {
     // display: inline-block;
     margin: 0 auto;
@@ -551,5 +721,24 @@ export default class Demo extends Vue {
       margin: 0 1.5rem;
     }
   }
+}
+
+#overhaulDialog .flex-label {
+  width: 100px;
+  text-align: right;
+}
+
+#deviceSettingDialog .flex-label {
+  width: 200px;
+  text-align: right;
+}
+
+#deviceSettingDialog .flex-content input[type="text"] {
+  width:100px;
+}
+
+#craftSettingDialog .flex-label {
+  width: 130px;
+  text-align: right;
 }
 </style>
