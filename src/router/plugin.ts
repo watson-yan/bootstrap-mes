@@ -5,6 +5,16 @@ export default [{
   component: PluginRoot,
   children: [
     {
+      path: 'laydate',
+      name: 'PluginLaydate',
+      component: () => import(/* webpackChunkName: "plugins" */ '../views/Plugin/laydate.vue')
+    },
+    {
+      path: 'numpad',
+      name: 'PluginNumpad',
+      component: () => import(/* webpackChunkName: "plugins" */ '../views/Plugin/numpad.vue')
+    },
+    {
       path: 'message',
       name: 'PluginMessage',
       component: () => import(/* webpackChunkName: "plugins" */ '../views/Plugin/message.vue')

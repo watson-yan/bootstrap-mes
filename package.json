@@ -40,7 +40,8 @@
     },
     "globals": {
       "hljs": true,
-      "$": true
+      "$": true,
+      "laydate": true
     },
     "extends": [
       "plugin:vue/essential",

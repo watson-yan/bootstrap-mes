@@ -13,5 +13,6 @@ declare global {
 }
 
 declare global {
-	var $: any
+  var $: any
+  var laydate: any
 }

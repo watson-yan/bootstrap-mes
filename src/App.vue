@@ -22,11 +22,13 @@
               插件
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-              <router-link class="dropdown-item" to="/plugin/bootstrapTable">BootstrapTable</router-link>
-              <router-link class="dropdown-item" to="/plugin/select2">select2</router-link>
-              <router-link class="dropdown-item" to="/plugin/ztree">zTree</router-link>
+              <router-link class="dropdown-item" to="/plugin/laydate">时间选择器 - Laydate</router-link>
+              <router-link class="dropdown-item" to="/plugin/numpad">数字键盘 - Numpad</router-link>
+              <router-link class="dropdown-item" to="/plugin/bootstrapTable">表格插件- BootstrapTable</router-link>
+              <router-link class="dropdown-item" to="/plugin/select2">下拉选择 - Select2</router-link>
+              <router-link class="dropdown-item" to="/plugin/ztree">树形选择器 - zTree</router-link>
               <router-link class="dropdown-item" to="/plugin/message">弹出框</router-link>
-              <router-link class="dropdown-item" to="/plugin/icon">Icon</router-link>
+              <router-link class="dropdown-item" to="/plugin/icon">字体图标 - Icon</router-link>
               <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a> -->
             </div>
