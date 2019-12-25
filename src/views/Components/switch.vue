@@ -6,11 +6,11 @@
     <div class="mb-3">
       <div class="custom-control custom-switch">
         <input type="checkbox" class="custom-control-input" id="customSwitch1">
-        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+        <label class="custom-control-label" for="customSwitch1">1号阀门</label>
       </div>
       <div class="custom-control custom-switch">
         <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
-        <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+        <label class="custom-control-label" for="customSwitch2">2号阀门</label>
       </div>
     </div>
     <pre class="hl-pre">

@@ -6,7 +6,7 @@
 	<div class="py-3">
 		<div class="row">
 			<div class="col-sm-3">
-				<input ref="input" type="text" class="form-control">
+				<input ref="input" type="text" class="form-control" placeholder="请输入生产数量">
 			</div>
 		</div>
 	</div>

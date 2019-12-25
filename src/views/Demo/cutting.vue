@@ -3,6 +3,14 @@
     <h4 class="mb-3 clearfix">
       切割翻转
       <div class="float-right" style="margin-top: -4px;">
+        <div class="mr-5 d-inline-block">
+          <!-- <label class="mr-5">操作提示</label> -->
+          <div class="custom-control custom-switch">
+            <input type="checkbox" id="customSwitch1" class="custom-control-input">
+            <label for="customSwitch1" class="custom-control-label text-normal">操作提示</label>
+          </div>
+        </div>
+
         <div class="btn btn-light error-trigger">
           异常信息
           <span class="badge badge-danger">0</span>

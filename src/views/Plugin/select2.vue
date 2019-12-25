@@ -3,67 +3,29 @@
     <p>官方文档：<a href="https://select2.org/" target="_blank">https://select2.org/</a></p>
     <h5 class="mb-3">普通用法 - 单选</h5>
     <div>
-      <select id="singleSelect" class="js-source-states form-control">
-        <optgroup label="Alaskan/Hawaiian Time Zone">
-          <option value="AK">Alaska</option>
-          <option value="HI">Hawaii</option>
-        </optgroup>
-        <optgroup label="Pacific Time Zone">
-          <option value="CA">California</option>
-          <option value="NV">Nevada</option>
-          <option value="OR">Oregon</option>
-          <option value="WA">Washington</option>
-        </optgroup>
-        <optgroup label="Mountain Time Zone">
-          <option value="AZ">Arizona</option>
-          <option value="CO">Colorado</option>
-          <option value="ID">Idaho</option>
-          <option value="MT">Montana</option>
-          <option value="NE">Nebraska</option>
-          <option value="NM">New Mexico</option>
-          <option value="ND">North Dakota</option>
-          <option value="UT">Utah</option>
-          <option value="WY">Wyoming</option>
-        </optgroup>
-        <optgroup label="Central Time Zone">
-          <option value="AL">Alabama</option>
-          <option value="AR">Arkansas</option>
-          <option value="IL">Illinois</option>
-          <option value="IA">Iowa</option>
-          <option value="KS">Kansas</option>
-          <option value="KY">Kentucky</option>
-          <option value="LA">Louisiana</option>
-          <option value="MN">Minnesota</option>
-          <option value="MS">Mississippi</option>
-          <option value="MO">Missouri</option>
-          <option value="OK">Oklahoma</option>
-          <option value="SD">South Dakota</option>
-          <option value="TX">Texas</option>
-          <option value="TN">Tennessee</option>
-          <option value="WI">Wisconsin</option>
-        </optgroup>
-        <optgroup label="Eastern Time Zone">
-          <option value="CT">Connecticut</option>
-          <option value="DE">Delaware</option>
-          <option value="FL">Florida</option>
-          <option value="GA">Georgia</option>
-          <option value="IN">Indiana</option>
-          <option value="ME">Maine</option>
-          <option value="MD">Maryland</option>
-          <option value="MA">Massachusetts</option>
-          <option value="MI">Michigan</option>
-          <option value="NH">New Hampshire</option>
-          <option value="NJ">New Jersey</option>
-          <option value="NY">New York</option>
-          <option value="NC">North Carolina</option>
-          <option value="OH">Ohio</option>
-          <option value="PA">Pennsylvania</option>
-          <option value="RI">Rhode Island</option>
-          <option value="SC">South Carolina</option>
-          <option value="VT">Vermont</option>
-          <option value="VA">Virginia</option>
-          <option value="WV">West Virginia</option>
-        </optgroup>
+      <select id="singleSelect" class="js-source-states form-control" style="width: 300px;">
+        <option value="山西">山西</option>
+        <option value="辽宁">辽宁</option>
+        <option value="吉林">吉林</option>
+        <option value="黑龙江">黑龙江</option>
+        <option value="江苏">江苏</option>
+        <option value="浙江">浙江</option>
+        <option value="安徽">安徽</option>
+        <option value="福建">福建</option>
+        <option value="江西">江西</option>
+        <option value="山东">山东</option>
+        <option value="河南">河南</option>
+        <option value="湖北">湖北</option>
+        <option value="湖南">湖南</option>
+        <option value="广东">广东</option>
+        <option value="海南">海南</option>
+        <option value="四川">四川</option>
+        <option value="贵州">贵州</option>
+        <option value="云南">云南</option>
+        <option value="陕西">陕西</option>
+        <option value="甘肃">甘肃</option>
+        <option value="青海">青海</option>
+        <option value="台湾">台湾</option>
       </select>
       <br>
       <pre class="hl-pre">
@@ -74,67 +36,29 @@
     <br>
     <h5 class="mb-3">普通用法 - 多选</h5>
     <div>
-      <select id="multiSelect" class="js-source-states form-control" name="states[]" multiple="multiple">
-        <optgroup label="Alaskan/Hawaiian Time Zone">
-          <option value="AK">Alaska</option>
-          <option value="HI">Hawaii</option>
-        </optgroup>
-        <optgroup label="Pacific Time Zone">
-          <option value="CA">California</option>
-          <option value="NV">Nevada</option>
-          <option value="OR">Oregon</option>
-          <option value="WA">Washington</option>
-        </optgroup>
-        <optgroup label="Mountain Time Zone">
-          <option value="AZ">Arizona</option>
-          <option value="CO">Colorado</option>
-          <option value="ID">Idaho</option>
-          <option value="MT">Montana</option>
-          <option value="NE">Nebraska</option>
-          <option value="NM">New Mexico</option>
-          <option value="ND">North Dakota</option>
-          <option value="UT">Utah</option>
-          <option value="WY">Wyoming</option>
-        </optgroup>
-        <optgroup label="Central Time Zone">
-          <option value="AL">Alabama</option>
-          <option value="AR">Arkansas</option>
-          <option value="IL">Illinois</option>
-          <option value="IA">Iowa</option>
-          <option value="KS">Kansas</option>
-          <option value="KY">Kentucky</option>
-          <option value="LA">Louisiana</option>
-          <option value="MN">Minnesota</option>
-          <option value="MS">Mississippi</option>
-          <option value="MO">Missouri</option>
-          <option value="OK">Oklahoma</option>
-          <option value="SD">South Dakota</option>
-          <option value="TX">Texas</option>
-          <option value="TN">Tennessee</option>
-          <option value="WI">Wisconsin</option>
-        </optgroup>
-        <optgroup label="Eastern Time Zone">
-          <option value="CT">Connecticut</option>
-          <option value="DE">Delaware</option>
-          <option value="FL">Florida</option>
-          <option value="GA">Georgia</option>
-          <option value="IN">Indiana</option>
-          <option value="ME">Maine</option>
-          <option value="MD">Maryland</option>
-          <option value="MA">Massachusetts</option>
-          <option value="MI">Michigan</option>
-          <option value="NH">New Hampshire</option>
-          <option value="NJ">New Jersey</option>
-          <option value="NY">New York</option>
-          <option value="NC">North Carolina</option>
-          <option value="OH">Ohio</option>
-          <option value="PA">Pennsylvania</option>
-          <option value="RI">Rhode Island</option>
-          <option value="SC">South Carolina</option>
-          <option value="VT">Vermont</option>
-          <option value="VA">Virginia</option>
-          <option value="WV">West Virginia</option>
-        </optgroup>
+      <select id="multiSelect" class="js-source-states form-control" style="width: 300px;" name="states[]" multiple="multiple">
+        <option value="山西">山西</option>
+        <option value="辽宁">辽宁</option>
+        <option value="吉林">吉林</option>
+        <option value="黑龙江">黑龙江</option>
+        <option value="江苏">江苏</option>
+        <option value="浙江">浙江</option>
+        <option value="安徽">安徽</option>
+        <option value="福建">福建</option>
+        <option value="江西">江西</option>
+        <option value="山东">山东</option>
+        <option value="河南">河南</option>
+        <option value="湖北">湖北</option>
+        <option value="湖南">湖南</option>
+        <option value="广东">广东</option>
+        <option value="海南">海南</option>
+        <option value="四川">四川</option>
+        <option value="贵州">贵州</option>
+        <option value="云南">云南</option>
+        <option value="陕西">陕西</option>
+        <option value="甘肃">甘肃</option>
+        <option value="青海">青海</option>
+        <option value="台湾">台湾</option>
       </select>
       <br>
       <pre class="hl-pre">
